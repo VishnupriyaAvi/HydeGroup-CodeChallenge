@@ -1,0 +1,38 @@
+<template>
+    <lightning-card class="slds-card__header slds-grid" title="Weather Information" icon-name="standard:forecasts">
+        <template if:true={weatherData}>
+                <div class="slds-grid slds-wrap slds-grid_vertical">
+                    <template for:each={weatherData} for:item="location">
+                        <div key={location.id}>
+                            <lightning-card>
+                                    <div slot="title">
+                                        <span>{location.name}</span>
+                                        <span style="padding-left: 10rem;">{location.updatedDate}-{location.updatedTime}</span>
+                                    </div>
+                                    <div class="slds-grid slds-gutters">
+                                        <div class="slds-col">
+                                            <span style="line-height: 2rem;">                                   
+                                                <p>Humidity: {location.humidity} °C</p>
+                                                <p>Description : {location.description}</p>
+                                                <p>Temperature : {location.temperature} °C</p>
+                                            </span>
+                                            
+                                          </div>
+                                          <div class="slds-col">
+                                            <span>                                   
+                                                <img src={location.icon} height="100" width="100" title={location.temperature}>
+                                            </span>
+                                          </div>
+                                      
+                                </div>
+                                
+                        </lightning-card>
+                        </div>
+                    </template>
+                </div>
+            </template>
+            <template if:false={weatherData}>
+                <p>Weather data not available</p>
+            </template>
+        </lightning-card>    
+</template>
