@@ -1,0 +1,16 @@
+.slds-modal__header {
+    background-color: #f4f6f9;
+}
+
+.slds-modal__content {
+    padding: 2rem;
+}
+
+.slds-modal__footer {
+    background-color: #f4f6f9;
+}
+.slds-grid_align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
