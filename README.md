@@ -16,7 +16,8 @@ This branch contains files for the Task Manager and Weather Display features. Af
 **Real-Time Data Integration:** A REST API was implemented in an Apex trigger to fetch real-time weather data whenever a record is created or updated. This ensures that the displayed weather information is always up-to-date.
 
 **Task Manager:
-****User-Centric Design:** Since the task was to display the logged-in user's tasks, the standard procedure was followed to integrate it with the home page, which typically contains other standard components. The design was made user-friendly by opting for a layout similar to a related list, allowing users to easily interact with their tasks.
+**
+**User-Centric Design:** Since the task was to display the logged-in user's tasks, the standard procedure was followed to integrate it with the home page, which typically contains other standard components. The design was made user-friendly by opting for a layout similar to a related list, allowing users to easily interact with their tasks.
 
 **Inline Editing and Pagination:** Inline editing for task statuses was implemented to streamline task management, along with buttons for completing and creating tasks. Pagination was included as a best practice to handle large sets of data efficiently and enhance the overall user experience.
 
